@@ -1,0 +1,83 @@
+body {
+  
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #3200e6;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  background-color: rgb(113, 212, 117);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.view-cart-btn {
+  background-color: #008000;
+}
+
+.back-btn {
+  background-color: #271c81;
+}
+
+textarea {
+  width: 80%;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid #cccccc14;
+  padding: 10px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.cart-page, .login-page, .orders-page {
+  background-color: #fdfdfd;
+  padding: 20px;
+}

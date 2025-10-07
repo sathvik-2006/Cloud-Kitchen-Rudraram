@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Kitchen @ Rudraram</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Page -->
+  <div class="welcome-page" id="welcomePage">
+    <background><img src="back.jpg",></background>
+    <h1>Welcome to Cloud Kitchen @ Rudraram</h1>
+    <div class="button-group">
+      <button id="continueBtn">Continue</button>
+      <button id="cartBtn">Cart</button>
+      <button id="ordersBtn">Orders</button>
+    </div>
+  </div>
+
+  <!-- Login Page -->
+  <div class="login-page" id="loginPage" style="display:none;">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter Username"><br>
+    <input type="password" id="password" placeholder="Enter Password"><br>
+    <button onclick="loginUser()">Login</button>
+    <button class="back-btn" onclick="backToWelcome()">Back</button>
+  </div>
+
+  <!-- Menu Page -->
+  <div class="menu-page" id="menuPage" style="display:none;">
+    <h2>Menu</h2>
+    <h3>Veg Items</h3>
+    <div class="menu-section" id="vegItems"></div>
+
+    <h3>Non-Veg Items</h3>
+    <div class="menu-section" id="nonVegItems"></div>
+
+    <button class="view-cart-btn" onclick="goToCart()">View Cart</button>
+    <button class="back-btn" onclick="backToWelcome()">Back</button>
+  </div>
+
+  <!-- Cart Page -->
+  <div class="cart-page" id="cartPage" style="display:none;">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3 id="totalPrice"></h3>
+
+    <h3>Delivery Address</h3>
+    <textarea id="address" placeholder="Enter your address here"></textarea>
+    <br>
+    <button onclick="placeOrder()">Place Order</button>
+    <button class="back-btn" onclick="backToMenu()">Back to Menu</button>
+  </div>
+
+  <!-- Orders Page -->
+  <div class="orders-page" id="ordersPage" style="display:none;">
+    <h2>Your Orders</h2>
+    <div id="orderList"></div>
+    <button class="back-btn" onclick="backToWelcome()">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
